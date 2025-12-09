@@ -27,3 +27,6 @@ jobs:
     
     - name: Build solution
       run: msbuild v2rayN.sln -t:rebuild -property:Configuration=Release
+      
+    - name: Upload
+      uses: actions/upload-artifact@v4
